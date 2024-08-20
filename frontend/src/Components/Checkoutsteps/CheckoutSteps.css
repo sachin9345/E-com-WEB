@@ -1,0 +1,49 @@
+.checkout-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+  }
+  
+  .step-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .step {
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .complete {
+    background-color: green;
+  }
+  
+  .incomplete {
+    background-color: darkgray;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent darkgray;
+  }
+  
+  .triangle.completed {
+    border-left-color: green;
+  }
+  
+  .triangle.active {
+    border-left-color: darkgreen;
+  }
+  
+  .triangle.incomplete {
+    border-left-color: darkgray;
+  }
+  

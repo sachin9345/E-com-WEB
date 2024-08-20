@@ -1,0 +1,152 @@
+.side-nav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #272627;
+    overflow-x: hidden;
+    transition: 0.33s; 
+    padding-top: 60px;
+  
+  }
+  
+  .side-nav.open {
+    width: 300px; 
+    padding: 0;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .content {
+    transition: margin-left 0.5s;
+   
+  }
+  
+  
+
+  .sidee img{
+    margin: 19px 0px 0px 15px;
+    cursor: pointer;
+  }
+
+  .llog{
+    padding-left: 87px;
+  }
+  
+  .name{
+    margin: 20px 20px 10px 20px;
+   background-color: #3D3C3E;
+    display: flex;
+    border-radius: 15px;
+  }
+
+  .name img{
+    margin:10px;
+  }
+
+  .name p{
+  
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    
+  }
+  
+  .orders{
+    margin: 0px 20px 10px 20px;
+    background-size: 0px;
+    background-color: #3D3C3E;
+    display: flex;
+    border-radius: 15px;
+  }
+
+  .orders img{
+    height: 20px;
+    margin: 12px;
+  }
+  .orders p{
+    color: white;
+    margin-top: 11px;
+  }
+
+  .shops{
+    margin: 0px 20px 10px 20px;
+    margin-top: 0px;
+    background-size: 30px;
+    background-color: #3D3C3E;
+    display: flex;
+    border-radius: 15px;
+  }
+
+  .shops img{
+    height: 20px;
+    margin: 11px;
+  }
+  .shops p{
+    color: white;
+    margin-top: 13px;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .fa-caret-down {
+    
+    margin-left: 5px;
+    
+  }
+
+  .whatar{
+    margin: 0px 20px 20px 20px;
+    background-size: 30px;
+    background-color: #3D3C3E;
+    display: flex;
+    border-radius: 15px;
+  }
+
+  .whatar img{
+    height: 20px;
+    margin: 13px;
+  }
+  .whatar p{
+    color: white;
+    margin-top: 13px;
+  }
+
+
+  .logout{
+    margin: 3cqh 20px 20px 20px;
+    background-size: 30px;
+    background-color: #D2FF3A;
+    display: flex;
+    border-radius: 15px;
+  }
+.updwon{
+  display: flex;
+  flex-direction: column;
+  
+}
+  .logout img{
+    height: 20px;
+    margin: 13px;
+  }
+  .logout p{
+    color: black;
+    margin-top: 13px;
+  }
+  

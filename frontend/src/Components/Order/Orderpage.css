@@ -1,0 +1,74 @@
+/* General Page Styles */
+.ordering-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0e0e0e; /* Dark background for the form */
+    color: #ffffff; /* Light text for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.2); /* Subtle green glow */
+  }
+  
+  /* Section Styles */
+  .section {
+    background-color: #121212; /* Slightly lighter dark background for sections */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.1); /* Green shadow for depth */
+  }
+  
+  .section h2 {
+    color: #D2FF3A; /* Vibrant green for headings */
+    margin-bottom: 15px; /* Space between heading and form fields */
+  }
+  
+  /* Form Field Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="month"] {
+    width: 100%; /* Full width to use available space */
+    padding: 10px; /* Comfortable padding inside the fields */
+    margin-bottom: 10px; /* Space between fields */
+    border-radius: 4px; /* Slightly rounded corners for a modern look */
+    border: 1px solid #868686; /* Green border for the inputs */
+    background-color: #1a1a1a; /* Darker background for input fields */
+    color: #ffffff; /* Light text color for contrast */
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+  }
+  
+  /* Button Styles */
+  .confirm-btn {
+    width: 100%; /* Full width for emphasis */
+    padding: 12px; /* Comfortable click area */
+    background-color: #D2FF3A; /* Bright green for visibility */
+    color: #0e0e0e; /* Dark text for contrast */
+    border: none; /* No border for a cleaner look */
+    border-radius: 4px; /* Consistent with input field styling */
+    cursor: pointer; /* Indicates clickable */
+    font-size: 16px; /* Readable text size */
+    margin-top: 10px; /* Space from the last element */
+  }
+  
+  
+  
+  /* Responsive adjustments for screens narrower than 768px */
+  @media (max-width: 768px) {
+    .ordering-page {
+      margin: 10px; /* Reduced margin */
+      padding: 10px; /* Reduced padding */
+    }
+  
+    .section {
+      padding: 10px; /* Reduced section padding for more space */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="month"] {
+      padding: 8px; /* Slightly less padding to save space */
+    }
+  }
+  

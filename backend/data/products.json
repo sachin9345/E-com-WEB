@@ -1,0 +1,38 @@
+[
+    {
+        "name": "T-shirtss",
+        "price": 245.00,
+        "description": "madaki ",
+        "ratings": 4.5,
+        "images": [
+            {
+                "image": "/shirt.png"
+            },
+            {
+                "image": "/shirt.png"
+            }
+        ],
+        "category": "T-shirt",
+        "stock": 5,
+        "numOfReviews": 15,
+        "reviews": []
+    },
+
+
+    {
+        "name": "Dragon Hoodie",
+        "price": 150.00,
+        "description": "Best Tshirt",
+        "ratings": 3.5,
+        "images": [
+            {
+                "image": "/images/products/2.jpg"
+            }
+        ],
+        "category": "Hoodie",
+        "stock": 9,
+        "numOfReviews": 5,
+        "reviews": []
+    }
+ 
+]

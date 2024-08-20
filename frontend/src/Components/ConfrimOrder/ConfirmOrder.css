@@ -1,0 +1,70 @@
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f4f4;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.header {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.section, .summary {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.image {
+  width: 8%;
+  height: auto;/* Space between image and text */
+  margin-right: 15px;
+}
+
+.itemDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link {
+    color: #0066c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.85em;
+    color: #666;
+}
+
+.summary {
+    width: 300px; /* Fixed width for the summary section */
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0066c0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

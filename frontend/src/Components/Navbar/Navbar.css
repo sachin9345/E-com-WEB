@@ -1,0 +1,216 @@
+.navbar {
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    color: white;
+    padding: 10px;
+    z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+   
+    
+  }
+  
+  .logo {
+    
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    
+  }
+
+
+
+  .profile{
+    margin:10px 12px 0px 0px;
+    
+  }
+
+  .profile button {
+    
+    background-color: #191919;
+    border-radius: 60%;
+    border: #191919;
+    padding: 4px 6px;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+  }
+
+  .logo img {
+    max-height: 45px; 
+    width: auto;
+  }
+  
+  
+  .menu-large-screen, .search-input-mobile {
+    display: none;
+  }
+  
+  
+  /*
+  .search-input-mobile {
+    width: 100%;
+    display: block;
+    margin: 10px 0px 10px;
+    height: 48px;
+    border-radius: 15px;
+    background-color: #44464A;
+    box-shadow: none;
+    color: white;
+  }
+  */
+
+  
+  
+  /* Styles for large screens */
+  @media (min-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+  
+    .menu-large-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .categories {
+      display: flex;
+      margin-right: 20px;
+    }
+  
+    .categories a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .categories a:hover {
+      color: #D2FF3A;
+    }
+  
+    .nav-buttons {
+      display: flex;
+
+      
+    }
+  
+    .nav-buttons button {
+      margin-left: 10px;
+      background-color: #191919;
+      border-radius: 60%;
+      color: white;
+      cursor: pointer;
+      border-style: solid;
+    }
+
+    .nav-buttons button img{
+      padding: 5px;
+    }
+     .search-input {
+      margin-right: 20px;
+      width: 260px;
+      height: 30px;
+      border-radius: 15px;
+      border-style: solid;
+      background-color:#44464A;
+      color: white;
+      box-shadow: none;
+      
+    }
+  
+    .menu-mobile-screen, .search-input-mobile , .profile-icon {
+      display: none;
+    }
+  
+    .logo {
+      order: 0; /* Reset order for large screens */
+      padding-left: 56px;
+    }
+    .profile{
+      display: none;
+    }
+    .logbut{
+      cursor: pointer;
+
+    }
+    .logoutbut {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.logoutbut .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #272627;
+  min-width: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15px;
+ 
+}
+.myprofile{
+  margin: 10px 7px 10px 7px;
+  background-size: 0px;
+  background-color: #3D3C3E;
+  display: flex;
+  border-radius: 15px;
+}
+.myorders img{
+  height: 20px;
+  padding: 10px 0px 10px 10px;
+}
+.myorders{
+  margin: 10px 7px 10px 7px;
+  background-size: 0px;
+  background-color: #3D3C3E;
+  display: flex;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.dashboardss{
+  margin: 10px 7px 10px 7px;
+  background-size: 0px;
+  background-color: #3D3C3E;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.logoutdiv img{
+  height: 20px;
+  margin: 13px;
+}
+.logoutdiv{
+  margin: 10px 7px 10px 7px;
+  background-size: 0px;
+  background-color: #D2FF3A;
+  color: black;
+  display: flex;
+  border-radius: 15px;
+}
+.logoutbut .dropdown-content a, .logoutbut .dropdown-content button {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.logoutbut:hover .dropdown-content {
+  display: block;
+}
+ .categories a.active {
+      color: #D2FF3A; /* Bright green color */
+      font-weight: 900;
+    }
+
+    .logbut{
+      margin: 0px 50px 0px 20px;
+    }
+}
+  

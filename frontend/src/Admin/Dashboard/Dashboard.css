@@ -1,0 +1,90 @@
+/* General Layout and Container Styling */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    flex: 0 0 250px; /* fixed width for the sidebar */
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* Adds scroll to sidebar if content is too long */
+  }
+  
+  .dashboard {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+  }
+  
+  /* Cards and Grid Layout */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 21%; /* Responsive flex basis */
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Card Colors */
+  .bg-primary { background-color: #3498db; }
+  .bg-success { background-color: #2ecc71; }
+  .bg-danger { background-color: #e74c3c; }
+  .bg-info { background-color: #3498db; }
+  .bg-warning { background-color: #f39c12; }
+  
+  /* Typography and Icons */
+  .card-body {
+    padding: 20px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #34495e;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dfe6e9;
+    font-size: 14px;
+    color: #7f8c8d;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-footer:hover {
+    background-color: #ecf0f1;
+    color: #34495e;
+  }
+  
+  /* Accessibility and Readability Improvements */
+  a {
+    color: inherit; /* Ensures links do not stand out oddly from normal text */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adds an underline on hover for better UX */
+  }
+  

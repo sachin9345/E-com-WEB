@@ -1,0 +1,120 @@
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 4%;
+  }
+  
+  .product-card {
+    box-shadow: -1px 1px 4px 3px rgba(255, 255, 255, 0.2);
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Start with full width on smaller screens */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .product-image {
+     width: 80%; /* Adjust based on your preference */
+    max-width: 220px; /* Ensures the image does not become too large */
+    height: auto;
+    max-height: 420px;
+  }
+  
+  .text-container {
+    text-align: left;
+    width: 100%;
+   
+    
+  }
+  
+  .product-price {
+    color: #D2FF3A;
+  }
+
+  .product-image-container {
+    position: relative;
+    width: 100%; /* Ensure the container fits the card */
+    display: flex;
+    justify-content: center; /* Center the image within the container */
+  }
+
+  .like-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Adds a slight background for visibility */
+    padding: 3px; /* Adjust based on your preference */
+    border-radius: 50%; /* Makes the background circle */
+    font-size: 18px; /* Adjust based on your preference */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  }
+
+  .ourprod{
+    color: white;
+    margin-top: 100px;
+    padding-left: 70px;
+  }
+  
+  @media (max-width: 720px) {
+    .product-card {
+      width: calc(50% - 20px); /* 2 cards in a row on medium screens */
+      .like-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        background-color: rgba(255, 255, 255, 0.7); /* Optional: Adds a slight background for visibility */
+        padding: 3px; /* Adjust based on your preference */
+        border-radius: 50%; /* Makes the background circle */
+        font-size: 12px; /* Adjust based on your preference */
+        cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+      }
+    }
+    .ourprod h3{
+      margin:25px 0px 10px 29px ;
+      padding: 0;
+      
+    }
+
+    .ourprod{
+      margin: 0;
+      padding: 0;
+    }
+
+    .product-listing{
+      padding: 0;
+    }
+    .text-container {
+      text-align: left;
+      font-size: 12px;
+      width: 100%;
+      padding-left: 15px;
+      
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-card {
+      width: calc(25% - 20px); /* 3 cards in a row on large screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .product-card {
+      width: calc(25% - 20px); /* 4 cards in a row on extra large screens */
+    }
+  }
+  
+  /* Adjust the image size on larger screens if needed */
+  @media (min-width: 768px) {
+    .product-image {
+      width: 100%; /* Makes the image take the full width of the card */
+    }
+  }
+  

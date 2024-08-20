@@ -1,0 +1,62 @@
+.hero{
+    background-position: 15%;
+    background-image: url("greenline.png");
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    margin-top: 50px;
+}
+
+
+.images{
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 70px;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 22px;
+}
+.desc p{
+    margin: 10px 0 25px 0;
+}
+
+
+
+
+@media (max-width: 720px) {
+    .images img{
+        height: 70px;
+        width: 70px;
+        justify-content: center;
+    }
+
+.images{
+    margin-left: 0px;
+}
+
+
+.hero{
+    background-position: 5%;
+    height: 100px;
+    background-size: 700px;
+    margin-top: 30px;
+}
+
+.desc{
+   
+    color: white;
+    margin: 0px 5px 0px 9px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+}

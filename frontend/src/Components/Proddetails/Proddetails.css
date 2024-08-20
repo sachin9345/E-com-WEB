@@ -1,0 +1,177 @@
+.product-view-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Adjust based on your spacing preference */
+    padding: 20px;
+    justify-content: space-between;
+    
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  .thumbnail-image {
+    width: 60px; /* Adjust based on your size preference */
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .thumbnail-image:hover {
+    opacity: 1;
+  }
+  
+  .main-image img {
+    width: 300px; /* Adjust based on your size preference */
+    height: auto;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: inline;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-option {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  
+     
+  
+  .product-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .image-gallery {
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100px; /* Adjust as needed */
+  }
+  
+  .main-image img {
+    width: 300px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    flex-grow: 0.6;
+    color: white;
+  }
+
+  .size-option {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .size-option.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+  }
+  .addtocart{
+    background-color: #D2FF3A;
+    display: flex;
+    margin: 10px 7px 10px 7px;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .addtocart img{
+    height: 20px;
+    padding: 10px 0px 10px 10px;
+  }
+  .addtocart p{
+    margin: 12px 8px 8px 8px;
+  }
+
+  
+  @media (max-width: 768px) {
+    .product-view {
+      flex-direction: column; 
+      
+    }
+  
+    .main-image img{
+        max-width: 200px;
+        
+    }
+    .main-image{
+      width: 100%; /* Ensure full width in mobile view */
+      text-align: center;
+      margin: 0 auto;
+    }
+    .image-gallery{
+        display: none;
+    }
+    .product-details{
+        
+        justify-content: flex-start;
+    }
+  
+    .thumbnail {
+      width: 80px; 
+    }
+    .butttons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .slick-slide img {
+      margin: 0 auto;
+    }
+    .slick-dots {
+      bottom: -25px; /* Adjust positioning relative to the slider */
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    
+    .slick-dots li {
+      margin: 0 3px;
+    }
+    
+    .slick-dots li button {
+      font-size: 0; /* Removes the button text (typically numbers) */
+      line-height: 0;
+    }
+    
+    .slick-dots li button:before {
+      content: '•'; /* Unicode character for the dot */
+      font-size: 16px; /* You can change the size of the dot here */
+      line-height: 20px;
+      color: #ddd; /* Dot color */
+      opacity: 0.75;
+      transition: opacity .3s, color .3s; /* Smooth transition for hover effects */
+    }
+    
+    .slick-dots li.slick-active button:before {
+      color: #333; /* Active dot color */
+      opacity: 1;
+    }
+  }
+  

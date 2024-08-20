@@ -1,0 +1,96 @@
+/* Container for the entire registration page, using flexbox for layout */
+.register-container {
+    display: flex;
+    height: 100vh; /* Full screen height */
+}
+
+/* If you want to add an image like the login, you can do so here */
+.register-image-side {
+    flex: 1; /* Take up half of the container */
+    background-image: url('Rectangle.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the whole side */
+}
+
+/* Right side with the form */
+.register-form-side {
+    flex: 0.6; /* Take up the other half of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the form itself */
+.register-form {
+    text-align: center;
+    width: 90%; /* Adjust based on your preference */
+    max-width: 400px; /* Maximum width of the form */
+    /* Center the form in its container */
+    color: white;
+}
+
+.register-logo {
+    margin-bottom: 20px;
+    /* Add styles for your logo here, such as width, height, or background-image */
+}
+
+.register-form h2, .register-form p {
+    margin-bottom: 20px; /* Spacing between elements */
+}
+
+.register-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px; /* Spacing around labels */
+}
+
+.register-form input[type=email]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Spacing between input fields */
+    background-color: black;
+    color: white;
+}
+.register-form input[type=password] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px; /* Spacing between input fields */
+    background-color: black;
+    color: white;
+}
+
+/* Style for the registration button */
+.register-button {
+    background-color: #D2FF3A; /* Green background */
+    color: rgb(0, 0, 0); /* Black text */
+    padding: 10px 20px;
+    border: none;
+    justify-content: center;
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Make the button expand to full width */
+    margin-bottom: 20px; /* Spacing after the button */
+}
+
+/* Hover effects and focus styles for better user experience */
+.register-button:hover {
+    opacity: 0.8; /* Slight transparency change on hover */
+}
+
+.register-form input[type=email]:focus, 
+.register-form input[type=password]:focus {
+    border-color: #D2FF3A; /* Highlight focus on input fields */
+}
+
+@media (max-width: 720px) {
+    .register-image-side {
+        display: none; /* Hide the image side on small screens */
+    }
+    .register-form-side {
+        flex: 1; /* This will now take up the full container width */
+    }
+    .register-form {
+        margin: 20px; /* Adjust margin for mobile devices */
+    }
+    .register-logo {
+        display: none; /* Optionally hide the logo on small screens */
+    }
+}

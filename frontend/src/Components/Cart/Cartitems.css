@@ -1,0 +1,121 @@
+.cart-page {
+  max-width: 960px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr; /* Image, Details (Name + Price), Actions (Qty + Delete) */
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px; /* Space between image and details */
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.item-price {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+   /* Even spacing between quantity controls and delete button */
+}
+
+.quantity-btn {
+  background-color: #D2FF3A;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* Space between increment and decrement buttons */
+}
+
+.count {
+  width: 40px;
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: black;
+  padding: 5px 10px;
+  border-style: none;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  margin-left: 65px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .cart-page {
+      padding: 10px; /* Reduce padding */
+      margin: 0;
+  }
+
+  .cart-item {
+      grid-template-columns: 100px 1fr; /* Adjust columns for mobile */
+      grid-template-areas:
+          "image details"
+          "image actions";
+      gap: 10px;
+  }
+
+  .item-image {
+      grid-area: image;
+  }
+
+  .item-details {
+      grid-area: details;
+      padding-right: 0; /* Remove padding on right to maximize space */
+  }
+
+  .item-quantity {
+      grid-area: actions;
+      flex-direction: row; /* Ensure controls are linear */
+      justify-content: flex-start; /* Align controls to the start */
+      padding: 0; /* Remove any additional padding */
+  }
+
+  .quantity-btn {
+      padding: 4px 6px; /* Smaller padding to fit mobile screens better */
+      font-size: 12px; /* Smaller font size for buttons */
+  }
+
+  .delete-btn {
+      padding: 4px 6px; /* Uniform padding for delete button */
+      margin-left: 35px;
+  }
+
+  .item-name, .item-price {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}

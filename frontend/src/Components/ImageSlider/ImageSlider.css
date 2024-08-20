@@ -1,0 +1,62 @@
+.slider-container {
+
+  
+    overflow: hidden;
+    width: 100%;
+    height: auto; /* Adjust based on your needs */
+    margin-top: 10px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    min-width: 100%; /* Ensure images fill the container */
+    height: 550px; /* Adjust based on your needs */
+    object-fit: fill; /* Optional, based on your design */
+}
+
+.slider p{
+    position: absolute;
+    top:15%;
+    left:50%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.explore{
+    background-color: yellowgreen;
+    top:65%;
+    left:70% ;
+    position: absolute;
+    height: 38px;
+    width: 130px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Hide SideNav on screens wider than 768px */
+@media (max-width: 720px) {
+    .slider img {
+        min-width: 100%; /* Ensure images fill the container */
+        height: auto; /* Adjust based on your needs */
+        object-fit: fill; /* Optional, based on your design */
+    }
+    .slider p{
+        position: absolute;
+        top:15%;
+        left:50%;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+
+
+    
+    
+}
