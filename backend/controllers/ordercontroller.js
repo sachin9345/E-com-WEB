@@ -32,7 +32,6 @@ exports.newOrder =  catchAsyncError( async (req, res, next) => {
     })
 })
 
-//Get Single Order - api/v1/order/:id
 exports.getSingleOrder = catchAsyncError(async (req, res, next) => {
     const order = await Order.findById(req.params.id).populate('user', 'name email');
     if(!order) {
@@ -45,7 +44,6 @@ exports.getSingleOrder = catchAsyncError(async (req, res, next) => {
     })
 })
 
-//Get Loggedin User Orders - /api/v1/myorders
 exports.myOrders = catchAsyncError(async (req, res, next) => {
     const orders = await Order.find({user: req.user.id});
 
@@ -55,7 +53,6 @@ exports.myOrders = catchAsyncError(async (req, res, next) => {
     })
 })
 
-//Admin: Get All Orders - api/v1/orders
 exports.orders = catchAsyncError(async (req, res, next) => {
     const orders = await Order.find();
 
@@ -72,7 +69,6 @@ exports.orders = catchAsyncError(async (req, res, next) => {
     })
 })
 
-//Admin: Update Order / Order Status - api/v1/order/:id
 exports.updateOrder =  catchAsyncError(async (req, res, next) => {
     const order = await Order.findById(req.params.id);
 
@@ -100,7 +96,6 @@ async function updateStock (productId, quantity){
     product.save({validateBeforeSave: false})
 }
 
-//Admin: Delete Order - api/v1/order/:id
 exports.deleteOrder = catchAsyncError(async (req, res, next) => {
     const order = await Order.findById(req.params.id);
     if(!order) {
