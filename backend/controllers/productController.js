@@ -3,7 +3,6 @@ const ErrorHandler = require('../utils/errorHandler')
 const catchAsyncError = require('../middlewares/catchAsyncError')
 const APIFeatures = require('../utils/apiFeature');
 
-//getproducts - /api/v1/products
 exports.getProducts = catchAsyncError(async (req, res, next)=>{
  
   const apiFeatures = new APIFeatures(Product.find(), req.query).search().filter();
@@ -19,7 +18,6 @@ exports.getProducts = catchAsyncError(async (req, res, next)=>{
     })
 })
 
-//create product - /api/v1/product/new
 exports.newProduct = catchAsyncError(async (req, res, next)=>{
     const product = await Product.create(req.body);
     res.status(201).json({
@@ -30,7 +28,6 @@ exports.newProduct = catchAsyncError(async (req, res, next)=>{
 });
 
 
-//get single product - /api/v1/product/id
 
 exports.getSingleProduct = catchAsyncError(async (req, res, next)=>{
     const product = await Product.findById(req.params.id);
@@ -44,7 +41,6 @@ exports.getSingleProduct = catchAsyncError(async (req, res, next)=>{
     })
 })
 
-//update product
 exports.updateProduct = catchAsyncError(async (req, res, next)=>{
     let product = await Product.findById(req.params.id);
     
@@ -87,7 +83,6 @@ exports.deleteProduct = catchAsyncError(async (req, res, next) => {
     });
 })
 
-//Create Review - api/v1/review
 exports.createReview = catchAsyncError(async (req, res, next) =>{
     const  { productId, rating, comment } = req.body;
 
@@ -133,7 +128,6 @@ exports.createReview = catchAsyncError(async (req, res, next) =>{
 
 })
 
-//Get Reviews - api/v1/reviews?id={productId}
 exports.getReviews = catchAsyncError(async (req, res, next) =>{
     const product = await Product.findById(req.query.id).populate('reviews.user','name email');
 
@@ -143,7 +137,6 @@ exports.getReviews = catchAsyncError(async (req, res, next) =>{
     })
 })
 
-//Delete Review - api/v1/review
 exports.deleteReview = catchAsyncError(async (req, res, next) =>{
     const product = await Product.findById(req.query.productId);
     
@@ -173,7 +166,6 @@ exports.deleteReview = catchAsyncError(async (req, res, next) =>{
 
 });
 
-// get admin products  - api/v1/admin/products
 exports.getAdminProducts = catchAsyncError(async (req, res, next) =>{
     const products = await Product.find();
     res.status(200).send({
