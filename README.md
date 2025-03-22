@@ -10,3 +10,7 @@ Features
 5.Easy workflow
 6.Secure Authentication
 7.Orders
+
+Login Details
+Email:  admin123@gmail.com
+password:  sachin123
