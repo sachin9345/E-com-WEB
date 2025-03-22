@@ -35,8 +35,8 @@ const Footer = () => {
                 
                 <div className="footer-section">
                     <h4>Customer Support</h4>
-                    <div><FaPhone />97155 24124</div>
-                    <div><FaEnvelope />Wearinshop@gmal.com</div>
+                    <div><FaPhone />123456789</div>
+                    <div><FaEnvelope />Wearinshop@gmail.com</div>
                 </div>
             </div>
         </footer>
