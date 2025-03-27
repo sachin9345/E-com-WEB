@@ -1,0 +1,86 @@
+Problem 1: Number Management Microservice
+
+Project Question:
+Design and implement a high-performance HTTP microservice called number-management-service that exposes a GET API /numbers. The service should:
+
+    Accept multiple URLs as query parameters (e.g., url=http://example.com/primes&url=http://example.com/fibo).
+
+    Fetch JSON data from each valid URL (format: {"numbers": [1, 2, 3]}).
+
+    Merge, deduplicate, and sort all integers in ascending order.
+
+    Return the result in the format {"numbers": [merged list]} within 500ms, ignoring slow/unresponsive URLs.
+
+    Handle edge cases (invalid URLs, empty responses, duplicates).
+
+Deliverables:
+
+    Working Golang/Python/Node.js service with /numbers endpoint.
+
+    Unit tests for URL validation, merging logic, and timeout handling.
+
+    Benchmark tests to ensure compliance with the 500ms constraint.
+
+
+
+
+
+
+
+Problem 2: Prefix Lookup Microservice
+
+Project Question:
+Build a prefix-management-service with a GET API /prefixes that:
+
+    Accepts a comma-separated list of keywords (e.g., keywords=bonfire,bool).
+
+    Checks each keyword against a predefined word list (e.g., ["bonfire", "cardio", "case"]).
+
+    For found keywords, returns the smallest unique prefix (e.g., bonfire → "bonf").
+
+    For missing keywords, returns "not_found" with prefix "not_applicable".
+
+Deliverables:
+
+    API implementation (e.g., Flask/Express) with /prefixes endpoint.
+
+    Trie (prefix tree) or optimized algorithm for prefix resolution.
+
+    Test cases for:
+
+        Keywords with shared prefixes (e.g., bonsai vs. bonfire).
+
+        Non-existent keywords.
+
+
+
+Problem 3: E-Commerce Application
+
+Project Question:
+Develop a full-stack e-commerce app with:
+
+    Backend (Node.js + MongoDB):
+
+        User auth (JWT): Register, Login, Password Reset.
+
+        Product CRUD APIs.
+
+        Cart management (add/remove items, calculate totals).
+
+    Frontend (React):
+
+        Responsive UI with product listings, cart view, and user auth forms.
+
+        State management (Redux/Context API) for cart and user sessions.
+
+Deliverables:
+
+    RESTful API docs (Postman/Swagger).
+
+    React frontend with:
+
+        Product search/filter.
+
+        Cart persistence (local storage/API).
+
+    Database schema design (MongoDB collections for users, products, orders).
