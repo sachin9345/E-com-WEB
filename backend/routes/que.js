@@ -22,12 +22,18 @@ router.post('/login', (req, res) => {
 
     res.json({ message: "Login successful!", token });
 });
-router.get('/questions', verifyToken, (req, res) => {
-    const questions = [
-        { id: 1, question: "What is Node.js?" },
-        { id: 2, question: "What is JWT?" },
-        { id: 3, question: "How does token authentication work?" }
-    ];
-    res.json({ questions });
+router.get('/questions',verifyToken, (req, res) => {
+    const fs = require('fs');
+    const path = require('path');
+    const filePath = path.join(__dirname, 'qp.txt');
+
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading file:", err.message);
+            return res.status(500).json({ error: "Internal Server Error", details: err.message });
+        }
+        res.send(data);
+    });
 });
+
 module.exports = router;
